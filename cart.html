@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        
+        body{
+            color: white;
+            background-color: rgb(27,28,28);
+        }
+        input::placeholder{
+            color: white;
+            padding: 5px;
+        }
+        .form-control::placeholder{
+            color: white;
+        }
+        .form-control{
+            background-color: rgb(42, 41, 41);
+        }
+    </style>
+</head>
+<body>
+    <header class="md-3">
+         <!------------- Navbar CODE Start ------------------>
+        <div class="main-navbar g">
+            <a class="tech-shop" href="/project on html and css/index.html">Tech-Shop</a>
+            <div class="all-icons">
+                <a class="icon" href="">
+                    <img class="search-icon" src="../images/search-interface-symbol.png" alt="">
+                </a>
+                <a class="icon position-relative" href="/html/cart.html">
+                    <img class="cart-icon" src="../images/shopping-cart.png" alt="">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        4
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+
+                <!------------- MODAL CODE Start ------------------>
+                <!-- USER ICON (MODAL TRIGGER) -->
+                <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 80px;">
+                    <img class="user-icon" src="../images/user.png" alt="">
+                </a>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+                                    <p class="mb-0">Already have an account ?<strong> Login</strong></p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1) brightness(400%) contrast(150%);"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Username"><br>
+                                        <input type="email" class="form-control" id="recipient-email" placeholder="Email"><br>
+                                        <input type="password" class="form-control" id="recipient-password" placeholder="Password"><br>
+                                        <input type="password" class="form-control" id="recipient-confirm-password" placeholder="Confirm Password"><br>
+                                        <button class="Signup-button">Signup</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="d-flex align-items-center w-75 mx-auto my-3">
+                                <div class="flex-grow-1 border-bottom"></div>
+                                <div class="px-4 py-1 text-light">or login with</div>
+                                <div class="flex-grow-1 border-bottom"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-evenly mb-4">
+                                <button class="fb-button">Facebook</button>
+                                <button class="Goog-button">Google</button>
+                                <button class="twitter-button">Twitter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------- MODAL CODE End ------------------>
+                
+
+            </div>
+        </div>
+        <!------------- Navbar CODE End ------------------>
+    </header>
+
+    <main>
+        <div class="overfl">
+             <!------------------------- Overflow Start --------------------------------->
+            <div class="overflow-y-scroll">
+                <div>
+                     <!------------------- First Overflow Start ----------------->
+                    <div class="frst-ovrflw">
+                        <img class="ovrflw-image" src="../images/jbl660nc-1.png" alt="">
+                        <span style="margin-left: 3%;">
+                            <h5 class="ovrflw-title">JBL Live 660NC Wireless Over-Ear NC Headphones</h5>
+                            <p id="ovrflw-price" class="card-text">₹9,999</p>
+                            <p class="card-text">₹14,999</p><br><br>
+                            <div class="input-group" style="width: 200px;">
+                                <button style="border-right: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-minus">-</button>
+                                <input type="number" class="form-control" value="1" min="1" id="quantity-input">
+                                <button style="border-left: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-plus">+</button>
+                            </div>
+                        </span>
+                        <div>
+                            <i class="fa-regular fa-trash-can fa-xl"></i>                    
+                        </div>
+                    </div><br>
+                </div><hr style="width: 90%; margin: 0 auto;">
+                <!----------------- First Overflow End ------------------>
+
+                <!----------------- Second Overflow Start ------------------>
+                <div>
+                    <div class="frst-ovrflw">
+                        <img class="ovrflw-image" src="../images/boat518-1.png" alt="">
+                        <span>
+                            <h5 class="ovrflw-title">boAt Rockerz518 On-Ear Wireless Headphones</h5>
+                            <p id="ovrflw-price" class="card-text">₹1,299</p>
+                            <p class="card-text">₹3,999</p><br><br>
+                            <div class="input-group" style="width: 200px;">
+                                <button style="border-right: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-minus">-</button>
+                                <input type="number" class="form-control" value="1" min="1" id="quantity-input">
+                                <button style="border-left: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-plus">+</button>
+                            </div>
+                        </span>
+                        <div>
+                            <i class="fa-regular fa-trash-can fa-xl"></i>
+                        </div>
+                    </div><br>
+                </div><hr style="width: 90%; margin: 0 auto;">
+                <!----------------- Second Overflow End ------------------>
+                
+                <!----------------- Third Overflow Start ------------------>
+                <div>
+                    <div class="frst-ovrflw">
+                        <img class="ovrflw-image" src="../images/boat131-1.png" alt="">
+                        <span style="margin-left: -4%;">
+                            <h5 class="ovrflw-title">boAt Rockerz 131 Wireless In-Ear Earbuds</h5>
+                            <p id="ovrflw-price" class="card-text">₹1,099</p>
+                            <p class="card-text">₹2,999</p><br><br>
+                            <div class="input-group" style="width: 200px;">
+                                <button style="border-right: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-minus">-</button>
+                                <input type="number" class="form-control" value="1" min="1" id="quantity-input">
+                                <button style="border-left: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-plus">+</button>
+                            </div>
+                        </span>
+                        <div>
+                            <i class="fa-regular fa-trash-can fa-xl"></i>                    
+                        </div>
+                    </div><br>
+                </div><hr style="width: 90%; margin: 0 auto;">
+                <!----------------- Third Overflow End ------------------>
+
+                <!----------------- Fourth Overflow Start ------------------>
+                <div>
+                    <div class="frst-ovrflw">
+                        <img class="ovrflw-image" src="../images/boat110-1.png" alt="">
+                        <span style="margin-left: -4%;">
+                            <h5 class="ovrflw-title">boAt BassHeads 110 In-Ear Wired Earphones</h5>
+                            <p id="ovrflw-price" class="card-text">₹499</p>
+                            <p class="card-text">₹999</p><br><br>
+                            <div class="input-group" style="width: 200px;">
+                                <button style="border-right: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-minus">-</button>
+                                <input type="number" class="form-control" value="1" min="1" id="quantity-input">
+                                <button style="border-left: none; width: 50px;" class="btn btn-outline-secondary text-light" type="button" id="button-plus">+</button>
+                            </div>
+                        </span>
+                        <div>
+                            <i class="fa-regular fa-trash-can fa-xl"></i>                    
+                        </div>
+                    </div><br>
+                </div><hr style="width: 90%; margin: 0 auto;">
+                <!----------------- Fourth Overflow End ------------------>
+            </div>
+            <!----------------------------- Overflow End --------------------------->
+
+            <div class="crt-items">
+                <h4>Order Summary ( 4 items )</h4><br><br>
+                <div class="crt-txt">
+                    <p>Original Price</p>
+                    <p>₹22,978</p>
+                </div>
+                <div class="crt-txt">
+                    <p>Discount</p>
+                    <p class="price-col">- ₹10,132</p>
+                </div>
+                <div class="crt-txt">
+                    <p>Delhivery</p>
+                    <p class="price-col">Free</p>
+                </div><hr style="width: 100%;"><br>
+                <div class="crt-txt">
+                    <h4>Total Price</h4>
+                    <h4>₹12,846</h4>
+                </div><br>
+                <button class="Checkout-button">Checkout</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-container">
+            <div>
+                <div>
+                    <span class="M">Tech-Shop</span>
+                </div>
+                    <p>Subscribe to our Email alerts to recieve early discount offers, and mew products info.</p>
+                    <input class="tech-place" type="email" placeholder="Email Address*"><br>
+                    <button class="subs-but">Subscribe</button>
+            </div>
+            <div class="m2">
+                <ul type="none">
+                    <h5>Help</h5>
+                    <a class="foot-cont" href="">
+                        <li>FAQs</li>
+                        <li>Track Order</li>
+                        <li>Cancel Order</li>
+                        <li>Return Order</li>
+                        <li>Warranty Info</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="m3">
+                <ul type="none">
+                    <h5>Policies</h5>
+                    <a class="foot-cont" href="">
+                        <li>Return Policy</li>
+                        <li>Security</li>
+                        <li>Sitemap</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="m4">
+                <ul type="none">
+                    <h5>Company</h5>
+                    <a class="foot-cont" href="">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Service Centres</li>
+                        <li>Careers</li>
+                        <li>Affiliates</li>
+                    </a>
+                </ul>
+            </div>
+        </div><hr style="width: 100%;">
+        <div class="foot-bot">
+            <span>2025 | All Rights Reserved. Built by | NANDITHA </span>
+            <div class="foot-icns">
+                <img class="icons" style="width: 30px;" src="../images/facebook-app-symbol.png" alt="">
+                <img class="icons" style="width: 30px;" src="../images/twitter.png" alt="">
+                <img class="icons" style="width: 30px;" src="../images/instagram.png" alt="">
+                <img class="icons" style="width: 30px; margin-right: 20px;" src="../images/linkedin.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
